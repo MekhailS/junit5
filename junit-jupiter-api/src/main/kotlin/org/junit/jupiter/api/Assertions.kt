@@ -316,4 +316,8 @@ fun function_with_not_closed_resource(file: File)
     val bf = file.bufferedWriter().write(666)
 }
 
+fun function_incorrect_code(int: Int) {
+    int.NOT_EXISTING_FUNCTION()
+}
+
 
