@@ -287,3 +287,23 @@ fun <R> assertTimeoutPreemptively(timeout: Duration, message: String, executable
 @API(status = EXPERIMENTAL, since = "5.5")
 fun <R> assertTimeoutPreemptively(timeout: Duration, message: () -> String, executable: () -> R): R =
     Assertions.assertTimeoutPreemptively(timeout, executable, message)
+
+fun __UNUSED_BAD_FUNCTION__(B: Int, B: Int)
+
+{
+
+    return
+
+}
+
+fun __UNUSED_BAD_FUNCTION_2__(B: Int, B: Int)
+
+{
+    var a: String? = "0"
+    a!!
+    a!!
+    return
+
+}
+
+
