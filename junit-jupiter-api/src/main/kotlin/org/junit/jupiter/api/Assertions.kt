@@ -306,4 +306,14 @@ fun __UNUSED_BAD_FUNCTION_2__(B: Int, B: Int)
 
 }
 
+fun functions_with_null_assertions(parameter: Any?): Any
+{
+    return parameter!!
+}
+
+fun function_with_not_closed_resource(file: File)
+{
+    val bf = file.bufferedWriter().write(666)
+}
+
 
