@@ -321,3 +321,9 @@ fun function_incorrect_code(int: Int) {
 }
 
 
+
+
+fun do_nothing() {
+    val a = null
+    a!!
+}
